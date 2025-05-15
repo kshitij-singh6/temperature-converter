@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #d0e2ff;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box {
+            width: 100vw;
+            margin: auto 25%;
+            margin-top: 0px;
+            padding: 50px;
+            background-color: #7babf3;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .input {
+            padding: 10%;
+            border: 1px solid black;
+            background-color: aliceblue;
+            font-size: larger;
+            text-align: center;
+        }
+
+        .input input {
+            max-width: 100%;
+            font-size: large;
+        }
+
+        .option {
+            margin-left: -50px;
+            margin-right: -50px;
+        }
+
+        .option-2 {
+            color: rgb(255 255 255);
+            margin-left: -45px;
+            margin-right: -45px;
+            background-color: #11284c9f;
+            border-radius: 5px;
+            padding: 5px;
+            border: 1px solid #3c67a9;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align:center ; color:rgb(9 9 89)">Temperature converter</h1>
+    <div class="container">
+
+        <div class="box">
+            <div class="input">
+                <div class="option"> select unit :
+                    <label>
+                        <input type="radio" name="unit" value="celsius">
+                        Celsius
+                    </label>
+                    <label>
+                        <input type="radio" name="unit" value="fahrenheit">
+                        Fahrenheit
+                    </label>
+                    <label>
+                        <input type="radio" name="unit" value="kelvin">
+                        Kelvin
+                    </label>
+                </div>
+                <p></p>
+                <div class="option-2"> select desired unit :
+                    <label>
+                        <input type="radio" name="unit-2" value="celsius">
+                        Celsius
+                    </label>
+                    <label>
+                        <input type="radio" name="unit-2" value="fahrenheit">
+                        fahrenheit
+                    </label>
+                    <label>
+                        <input type="radio" name="unit-2" value="kelvin">
+                        Kelvin
+                    </label>
+                </div>
+
+                <h4></h4>
+                <input type="text" placeholder="enter temperature " id="temp">
+                <p>
+                    <button id="calc">Calculate</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
